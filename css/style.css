@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #5936b4 0%, #362a84 100%);
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+}

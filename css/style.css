@@ -8,7 +8,133 @@ body {
     background: linear-gradient(90deg, #5936b4 0%, #362a84 100%);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px 10px;
+}
+
 .box {
+    width: 100%;
+    max-width: 350px;
     background-color: white;
     border-radius: 5px;
+    padding: 20px 20px 40px;
+}
+
+.box .box-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.box .box-info .time {
+    font-weight: 600;
+}
+
+.box .box-info .icons {
+    font-size: 12px;
+}
+
+.box .icons svg {
+    margin-left: 5px;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box .box-content .result-box span {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box .box-content .result-box p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    transition: .4s ease-in;
+}
+
+.box .box-content .degrees-type {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box .box-content .degrees-type label {
+    color: #555;
+    font-size: 13px;
+}
+
+.box .box-content .degrees-type .degree label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.box .box-content .degrees-type input, select {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+}
+
+.box .box-content .degrees-type input {
+    width: 70%
+}
+
+.box .box-content .degrees-type input:focus {
+    border: 1px solid #4c49f3;
+}
+
+.box .box-content .type-box {
+    display: flex;
+    align-items: center;
+}
+
+.box .box-content .type-box option {
+    background-color: #3c39e7;
+    color: #f6f6f6;
+}
+
+.box .box-content button {
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.box .box-content button:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+}
+
+.box .box-content button svg {
+    margin-right: 8px;
+    animation: moving .9s ease-in;
+}
+
+@keyframes moving {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
